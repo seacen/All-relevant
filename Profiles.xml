@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profiles Default="Production2">
+	<Profile Version="1.0" Name="Production">
+		<DisplayName>Paritech Main Servers</DisplayName>
+		<OAuth Authorise="https://api.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
+					 Token="https://api.paritech.com/Paritech.AuthServer/OAuth2/Token"
+					 Redirect="https://redirect.paritech.com/oauth2" />
+		<Signup Start="http://onboarding.openmarkets.com.au/Paritech.Onboarding.WebProxy"
+						Redirect="https://redirect.paritech.com/onboarding" />
+		<WebSocket>https://wsapi.paritech.com/Zenith/?version=1.2</WebSocket>
+	</Profile>
+  <Profile Version="1.0" Name="Production2">
+    <DisplayName>Paritech Main Servers 2</DisplayName>
+    <OAuth Authorise="https://api.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
+					 Token="https://api.paritech.com/Paritech.AuthServer/OAuth2/Token"
+					 Redirect="https://redirect.paritech.com/oauth2" />
+    <Signup Start="http://onboarding.openmarkets.com.au/Paritech.Onboarding.WebProxy"
+						Redirect="https://redirect.paritech.com/onboarding" />
+    <WebSocket>https://wsapi2.paritech.com/Zenith/?version=1.2</WebSocket>
+  </Profile>
+	<Profile Version="1.0" Name="Staging">
+		<DisplayName>Paritech Staging Servers</DisplayName>
+		<OAuth Authorise="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
+					 Token="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Token"
+					 Redirect="https://redirect.paritech.com/oauth2" />
+		<Signup Start="http://onboardingstaging.openmarkets.com.au/Paritech.Onboarding.WebProxy"
+						Redirect="https://redirect.paritech.com/onboarding" />
+		<WebSocket>https://wsapistaging.paritech.com/Zenith/?version=1.2</WebSocket>
+	</Profile>
+	<Profile Version="1.0" Name="Local USB">
+		<DisplayName>Local Development Servers (USB)</DisplayName>
+		<OAuth Authorise="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
+					 Token="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Token"
+					 Redirect="https://redirect.paritech.com/oauth2" />
+		<Signup Start="http://onboardingstaging.openmarkets.com.au/Paritech.Onboarding.WebProxy"
+						Redirect="https://redirect.paritech.com/onboarding" />
+		<WebSocket>http://192.168.42.9:4502/Zenith/?version=1.1</WebSocket>
+	</Profile>
+	<Profile Version="1.0" Name="Local Home">
+		<DisplayName>Local Development Servers (Home)</DisplayName>
+		<OAuth Authorise="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
+					 Token="https://apistaging.paritech.com/Paritech.AuthServer/OAuth2/Token"
+					 Redirect="https://redirect.paritech.com/oauth2" />
+		<Signup Start="http://onboardingstaging.openmarkets.com.au/Paritech.Onboarding.WebProxy"
+						Redirect="https://redirect.paritech.com/onboarding" />
+		<WebSocket>http://dev-daniel:4502/Zenith/?version=1.2</WebSocket>
+	</Profile>
+</Profiles>
