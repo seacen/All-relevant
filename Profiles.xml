@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Profiles Default="Production2">
+<Profiles Default="Staging">
 	<Profile Version="1.0" Name="Production">
 		<DisplayName>Paritech Main Servers</DisplayName>
 		<OAuth Authorise="https://api.paritech.com/Paritech.AuthServer/OAuth2/Authorise"
